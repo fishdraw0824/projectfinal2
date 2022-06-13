@@ -1,0 +1,106 @@
+*{
+            margin: 0;
+            padding: 0;
+            list-style:none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        html,body{
+            height: 100%;
+
+        }
+        body{
+            display:flex;
+            align-items: center;
+            background-color: #235;
+        } 
+        .wrap{
+            width:900px;
+            display:flex;
+            align-items: center;
+            margin:auto;
+            
+        }
+        .item{
+            width:270px;
+            margin:15px;
+            text-align:center;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            transform: translateY(0px);
+            transition: .25s;
+        }
+        .item img{
+            width:100%;
+            vertical-align: middle;
+           
+        }
+        .item h2{
+            border-bottom: 1px solid #888;
+            padding-bottom: .3em;
+            margin-bottom: .4em;
+            font-weight: 900;
+            transition: .25s;
+        }
+        .item p{
+            line-height: 1.5;
+            font-weight: 300;
+            transition: .25s;
+        }
+        .item .txt{
+            padding:20px;
+            position:relative;
+        }
+        .item .txt:before{
+            content:"";
+            position:absolute;
+            width:0;
+            height:0;
+            left:0;
+            top:0;
+            border-top: 40px solid transparent;
+            border-left: 134px solid #fff;
+            border-right: 134px solid #fff;
+            transform: translateY(-100%);
+            transition: .25s;
+        }
+    
+        .item:hover{
+            transform: translateY(-50px);
+            background-color: #fEB85D;
+        }
+        .item:hover .txt{
+            background-image: linear-gradient(0deg,#fb8076,#fEB85D);
+        }
+
+        .item:hover .txt:before{
+            border-left:134px solid #fEB85D;
+            border-right:134px solid #fEB85D;
+        }
+        .item:hover h2{
+            color:#fff;
+            border-bottom-color: #fff;
+        }
+        .item:hover p{
+            color:#fff;
+        }
+   
+.button{
+  margin: 10px;
+  display: inline-block;
+  
+  border: solid 1px black;
+  border-radius: 5px;
+  
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+  font-family: 微軟正黑體;
+  
+}
+.black_button{
+  
+  background-color: black;
+  color: white;
+  border: solid 1px red;
+}
